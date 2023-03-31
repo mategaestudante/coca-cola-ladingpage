@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fontawesome.com/icons/dolly?f=classic&s=solid">
+    <title>Document</title>
+</head>
+<body onclick="desaparecer()">
+
+    <nav>
+    
+        <a href="#">
+            <div class="logo">
+                <img src="imagens/coca-cola-logo.png">
+            </div>
+        </a>
+
+        <div class="menu">
+
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#prod">Produtos</a></li>
+                <li><a href="#ctt">Info</a></li>
+                <li><a href="#ctt">Contato</a></li>
+            </ul>
+
+        </div>
+                            <!--MENU MOBILE-->
+        <span class="material-symbols-outlined" onclick="ativar()" id="menu">
+            menu
+        </span>
+        
+        <div class="side-bar-right" id="side-bar">
+            <div class="icons">
+
+                <i class="material-symbols-outlined" id="e" onclick="desativar()">close</i>
+
+            </div>
+            <div class="icons">
+
+                <a href="#intro" onclick="desativar()">
+                    <i class="material-symbols-outlined" id="h">home</i>
+                </a>
+                <a href="#intro" onclick="desativar()">
+                    <p>Home</p>
+                </a>
+
+            </div>
+            <div class="icons">
+                <a href="#prod" onclick="desativar()"><i class="material-symbols-outlined" id="w">water_bottle</i></a>
+                <a href="#prod" onclick="desativar()">
+                    <p>Produtos</p>
+                </a>
+            </div>
+            <div class="icons">
+                <a href="#ctt" onclick="desativar()"><i class="material-symbols-outlined" id="in">info</i> </a>
+                <a href="#ctt" onclick="desativar()">
+                    <p>Info</p>
+                </a>
+            </div>
+            <div class="icons">
+                <a href="#ctt" onclick="desativar()"><i class="material-symbols-outlined" id="c">contact_support</i></a>
+                <a href="#ctt" onclick="desativar()">
+                    <p>Contato</p>
+                </a>
+            </div>
+        </div>
+
+    </nav>
+         <!--ENTRADA DE CONTEÚDO HEADER OU MELHOR DIZENDO INTRODUÇÃO-->
+    <section class="introdução" id="intro">
+
+        <article class="intro-txt">
+            <p class="pg-intro">refrigerante do povo</p>
+            <h1 class="t-intro">vai uma coca-cola?</h1>
+            <p class="pg2-intro">Palavras não definem,
+               a sensação de alegria e contagio ao tomar uma coca
+               geladinha no almoço de domingo. A sensação de estar com
+               seus melhores amigos em seu melhores momentos
+               aquele carinho de familia que so a coca-cola te proporciona.
+               A experiência de ter um bom dia e comer aquela sua comida favorita,
+               e ver a coca-cola bem ali na mesa.</p>
+               <a href="#prod"><input type="button" value="ver mais" id="botao"></a>
+            
+
+        </article>
+
+        <article class="intro-img">
+
+            <div class="bg-img-move">
+                <div class="bg-img" id="bgd-img">
+                    <img src="imagens/coca-normal-removebg-preview.png" id="foto">
+                </div>
+            </div>
+                       <!--SISTEMA DE TROCAS DE PRODUTOS-->
+            <div class="bg-escolha">
+                <img src="imagens/e3a9391d-e681-41ba-9d42-a645d355445f-removebg-preview.png" id="foto1" onclick="mudar()">
+                <img src="imagens/fanta-lata-removebg-preview.png" id="foto2" onclick="mudar2()">
+                <img src="imagens/coca-lata-removebg-preview.png" id="foto3" onclick="mudar3()">
+                <img src="imagens/coca-normal-removebg-preview.png" onclick="mudar4()">
+            </div>
+
+        </article>
+
+    </section>
+
+
+    <section class="produtos" id="prod">
+
+        
+            <h1>Mais sobre nossos<br>
+             <span>produtos</span></h1>
+
+             <img src="imagens/mouse-cursor.png">
+    
+              <!--CARDS SOBRE OS PRODUTOS-->
+        <div class="caixa-container">
+            <article class="caixa1">
+                <img src="imagens/coca-normal-removebg-preview.png" class="pic">
+               <p>A Coca-Cola é o tradicional refrigerante de Cola consumido no mundo inteiro e com sabor inconfundível. É feito de água gaseificada, açúcar, extrato de noz de cola e cafeína. Ideal para matar sua sede, para acompanhar refeições ou tomar ao longo do dia. Com sabor inconfundível e único, a Coca-Cola Original é o refrigerante mais tradicional e consumido no mundo inteiro! Toda Coca-Cola Original é produzida especialmente para manter sempre a qualidade do melhor sabor de refrigerante! É perfeita para compartilhar os melhores momentos da vida com amigos e familiares!</p>
+            </article>
+            <article class="caixa2">
+                <img src="imagens/fanta-lata-removebg-preview.png" class="pic">
+                <p>O refrigerante Fanta Laranja é o mais conhecido e apreciado para aqueles que são fãs de refrigerante de laranja. É uma ótima opção para ser consumido nas mais diversas ocasiões. Elaborado a base de água gaseificada, açúcar, 5,2% de suco natural de laranja, vitamina C, reguladores de acidez ácido cítrico e citrato de sódio, aroma sintético idêntico ao natural, sequestrantes hexametafosfato de sódio e edta cálcio dissódico, conservadores benzoato de sódio e sorbato de potássio, edulcorantes sucralose (4,2 mg) e acesulfame de potássio (3,2 mg) por 100 ml, corante artificial amarelo crepúsculo FCF.
+                </p>
+            </article>
+                <article class="caixa3">
+                    <img src="imagens/e3a9391d-e681-41ba-9d42-a645d355445f-removebg-preview.png" class="pic">
+                    <p>Descrição do produto O delicioso sabor de Coca-Cola sem se preocupar com as calorias, a Coca-Cola Light é perfeita para você. Tão gostosa quanto a Coca-Cola Original, a Coca-Cola Light além de ser leve e refrescante, não possui calorias nem açúcares e é ideal para fazer parte dos melhores momentos da vida.</p>
+                </article>
+            <article class="caixa4">
+                <img src="imagens/coca-lata-removebg-preview.png" class="pic">
+                <p>Refrigerante Coca-Cola Sem Açúcar Lata.
+
+                    A Coca-Cola Sem Açúcar é uma nova opção para atender um público que não quer abrir mão do sabor único de Coca-Cola, mas busca uma alternativa sem açúcar. Coca-Cola Sem Açúcar proporciona o sabor inigualável de Coca-Cola. Elaborada a partir de água gaseificada, extrato de noz de cola, cafeína, aspartame (12mg), ciclamato de sódio (24mg), acessulfame de potássio (15mg) por 100ml.</p>
+            </article>
+        </div>
+
+    </section>
+
+      <!--CONTATO E LINKS DO FOOTER-->
+    <footer>
+        <div class="caixa-footer" id="ctt">
+            <div class="logo-footer">
+                <img src="imagens/coca-cola-logo.png">
+            </div>
+            <div class="inicio-footer">
+                <ul>
+                    <li id="i">inicio</li>
+                    <li class="li">Home</li>
+                    <li class="li">Produtos</li>
+                    <li class="li">Info</li>
+                    <li class="li">Contato</li>
+                </ul>
+            </div>
+            <div class="sobre-footer">
+                <ul>
+                    <li id="so">Sobre nós</li>
+                    <li class="li">Informações da empresa</li>
+                    <li class="li">Contato</li>
+                    <li class="li">Blog</li>
+                </ul>
+            </div>
+            <div class="suporte-footer">
+                <ul>
+                    <li id="su">Suporte</li>
+                    <li class="li">FAQ</li>
+                    <li class="li">Telefone</li>
+                    <li class="li">Chat</li>
+                </ul>
+            </div>
+            <div class="contato-footer">
+                <div>
+                    <a href="#"><img src="imagens/icons8-twitter-48.png"></a>
+                    <a href="#"><img src="imagens/icons8-facebook-48.png"></a>
+                    <a href="#"><img src="imagens/icons8-instagram-48.png"></a>
+                </div>
+                <input type="button" value="contato" class="botao-footer">
+            </div>
+        </div>
+
+        <p style="text-align: center; color: gray; margin-top: 80px;">Todos direitos reservados a Coca-Cola</p>
+        <p style="text-align: center; color: gray;">Site feito por <span style="font-style: italic; color: rgb(80, 77, 77);">@Matheus Paixão</span> sem fins lucrativos.</p>
+    </footer>
+
+  
+
+
+    <!--SCRIPTIZINHO PARA AUTOMAÇÃO DE ALGUMAS COISAS-->
+
+    <script src="js/index.js">
+
+    </script>
+</body>
+</html>
